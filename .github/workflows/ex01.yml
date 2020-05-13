@@ -24,11 +24,4 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: echo Hello, world! Today is &&
-           date +%b-%d-%Y:%k:%M:%S
-
-    # Runs a set of commands using the runners shell
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+      run: echo "Hello, World! Today is $(date '+%m-%d-%Y %H:%M:%S')"
